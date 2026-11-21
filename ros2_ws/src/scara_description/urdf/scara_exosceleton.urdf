@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="scara_exosceleton">
+    <link name="Component2_1">
+        <inertial>
+            <origin xyz="0.0038520404792155988 0.015207912974070528 -0.11020241623627487" rpy="0.0 0.0 0.0" />
+            <mass value="0.4749360038407637" />
+            <inertia ixx="0.00013461418213471196" iyy="0.0001743402411944456" izz="0.0001346141821265198" ixy="-2.858383976445694e-17" iyz="-1.0635810166878671e-17" ixz="3.4350167567136214e-15" />
+        </inertial>
+        <visual name="Component2_1_visual">
+            <origin xyz="0.035240158712696534 -6.530121020425022e-05 -0.007751268748087228" rpy="-5.538162493580004e-18 0.3490658503988662 4.9829819752040534e-17" />
+            <geometry>
+                <mesh filename="package://scara_description/meshes/Component2_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Component2_1_collision">
+            <origin xyz="0.035240158712696534 -6.530121020425022e-05 -0.007751268748087228" rpy="-5.538162493580004e-18 0.3490658503988662 4.9829819752040534e-17" />
+            <geometry>
+                <mesh filename="package://scara_description/meshes/Component2_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Component3_1">
+        <inertial>
+            <origin xyz="-4.984960860349164e-09 -0.06788794579330135 0.014999998789795757" rpy="0.0 -1.176016472440566e-49 0.0" />
+            <mass value="1.2570982900186223" />
+            <inertia ixx="0.002956734470232038" iyy="0.0002108800107612752" izz="0.00300005062411076" ixy="1.461742101619162e-16" iyz="4.324523811115509e-19" ixz="3.526009764430351e-17" />
+        </inertial>
+        <visual name="Component3_1_visual">
+            <origin xyz="-0.14592045541997253 -0.06767105622617801 -0.04000000121020419" rpy="1.5707963267948966 -2.3825805453532116e-17 -0.17453292519943261" />
+            <geometry>
+                <mesh filename="package://scara_description/meshes/Component3_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Component3_1_collision">
+            <origin xyz="-0.14592045541997253 -0.06767105622617801 -0.04000000121020419" rpy="1.5707963267948966 -2.3825805453532116e-17 -0.17453292519943261" />
+            <geometry>
+                <mesh filename="package://scara_description/meshes/Component3_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Component5_1">
+        <inertial>
+            <origin xyz="-3.4699874386368015e-09 0.06970268225259416 -0.004413286291158567" rpy="0.0 -0.0 0.0" />
+            <mass value="1.4249126130836682" />
+            <inertia ixx="0.004534437436044557" iyy="0.0008822141195758363" izz="0.004321727295092363" ixy="1.3698352348268106e-15" iyz="-0.0011782771262771451" ixz="5.000927498611363e-16" />
+        </inertial>
+        <visual name="Component5_1_visual">
+            <origin xyz="0.039999996530015465 -0.030000001514884196 0.12000000121020428" rpy="-1.5707963267948966 4.958199280211278e-17 6.800116025829081e-16" />
+            <geometry>
+                <mesh filename="package://scara_description/meshes/Component5_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Component5_1_collision">
+            <origin xyz="0.039999996530015465 -0.030000001514884196 0.12000000121020428" rpy="-1.5707963267948966 4.958199280211278e-17 6.800116025829081e-16" />
+            <geometry>
+                <mesh filename="package://scara_description/meshes/Component5_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Component7_1">
+        <inertial>
+            <origin xyz="-0.009878740928297347 -0.027141607487580738 0.005000001210204253" rpy="0.0 -1.2037062152420224e-34 0.0" />
+            <mass value="20.213749999999997" />
+            <inertia ixx="0.5439222720796103" iyy="0.37147210271812503" izz="0.9150574789644013" ixy="-0.07235143675384113" iyz="2.664271617459958e-16" ixz="-7.433249944198939e-16" />
+        </inertial>
+        <visual name="Component7_1_visual">
+            <origin xyz="0.017101003387441107 0.04698463080256978 -0.03999999878979574" rpy="-1.5707963267948966 4.983902369313323e-16 -0.3490658503988661" />
+            <geometry>
+                <mesh filename="package://scara_description/meshes/Component7_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Component7_1_collision">
+            <origin xyz="0.017101003387441107 0.04698463080256978 -0.03999999878979574" rpy="-1.5707963267948966 4.983902369313323e-16 -0.3490658503988661" />
+            <geometry>
+                <mesh filename="package://scara_description/meshes/Component7_1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="Revolute-5" type="continuous">
+        <origin xyz="0.003852043221809045 0.04000000121020428 -0.11020241362594074" rpy="-1.5707963267948966 -0.34906585039886606 -5.1689516606746804e-17" />
+        <parent link="Component2_1" />
+        <child link="Component3_1" />
+        <axis xyz="2.311115933264683e-33 -4.404491703623405e-19 1.0000000000000002" />
+    </joint>
+    <joint name="Revolute-6" type="continuous">
+        <origin xyz="-7.632783294297952e-18 -0.14 0.029999999999999995" rpy="3.141592653589793 -2.2866660927590165e-33 -5.551115123125783e-17" />
+        <parent link="Component3_1" />
+        <child link="Component5_1" />
+        <axis xyz="-4.622231866529366e-33 -8.791098264615304e-19 1.0" />
+    </joint>
+    <joint name="Rigid-8" type="fixed">
+        <origin xyz="-0.00469846036133267 1.2102042515858836e-09 -0.08671009810629304" rpy="1.5707963267948966 -0.698131700797731 -5.635897867313138e-17" />
+        <parent link="Component2_1" />
+        <child link="Component7_1" />
+    </joint>
+
+    <link name='base_link'/>
+
+    <joint name='base_link_to_Component2_1' type='fixed'>
+        <parent link='base_link'/>
+        <child link='Component2_1'/>
+        <origin xyz='0 0 0' rpy='1.5707963 0 0'/>
+    </joint>
+</robot>
+
+<!-- <ros2_control name="GazeboSystem" type="system">
+  <hardware>
+    <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+  </hardware>
+  <joint name="Revolute-5">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+  <joint name="Revolute-6">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+  <joint name="Rigid-8">
+    <command_interface name="position"/>
+    <state_interface name="position"/>
+    <state_interface name="velocity"/>
+  </joint>
+</ros2_control> -->
