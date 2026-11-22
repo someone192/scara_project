@@ -103,26 +103,6 @@
     </joint>
 
     <xacro:include filename="$(find scara_description)/ros2_control/scara.ros2_control.xacro"/>
+    <xacro:scara_ros2_control name='scara_system' use_mock_hardware='true'/>
 
 </robot>
-
-<!-- <ros2_control name="GazeboSystem" type="system">
-  <hardware>
-    <plugin>gz_ros2_control/GazeboSimSystem</plugin>
-  </hardware>
-  <joint name="Revolute-5">
-    <command_interface name="position"/>
-    <state_interface name="position"/>
-    <state_interface name="velocity"/>
-  </joint>
-  <joint name="Revolute-6">
-    <command_interface name="position"/>
-    <state_interface name="position"/>
-    <state_interface name="velocity"/>
-  </joint>
-  <joint name="Rigid-8">
-    <command_interface name="position"/>
-    <state_interface name="position"/>
-    <state_interface name="velocity"/>
-  </joint>
-</ros2_control> -->
