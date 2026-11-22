@@ -1,24 +1,24 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
-    <xacro:macro name="scara_ros2_control" params="name use_mock_hardware disable_commands:=false">
-        
+    
+    <xacro:macro name="joint_iface" params="name">
+        <joint name="${name}">
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+        </joint>
+    </xacro:macro>
+            
+    <xacro:macro name="scara_ros2_control" params="name use_mock_hardware:=true disable_commands:=false">    
         <ros2_control name="${name}" type='system'>
             <hardware>
                 <plugin>mock_components/GenericSystem</plugin>
                 <param name='calculate_dynamics'>true</param>
                 <param name='disable_commands'>${disable_commands}</param>
             </hardware>
-
-            <xacro:macro name="joint_iface" params="name">
-                <joint name="${name}">
-                    <command_interface name="position"/>
-                    <state_interface name="position"/>
-                </joint>
-            </xacro:macro>
-
             <xacro:joint_iface name='joint1'/>
             <xacro:joint_iface name='joint2'/>
         </ros2_control>
 
     </xacro:macro>
+    
 </robot>
