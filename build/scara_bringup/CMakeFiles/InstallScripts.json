@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/ya/robotics_projects/scara_project/build/scara_bringup/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,86 @@
+[0.031s] Invoking command in '/home/ya/robotics_projects/scara_project/build/scara_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ya/robotics_projects/scara_project/ros2_ws/src/scara_description -DCMAKE_INSTALL_PREFIX=/home/ya/robotics_projects/scara_project/install/scara_description
+[0.554s] -- The C compiler identification is GNU 15.2.0
+[1.006s] -- The CXX compiler identification is GNU 15.2.0
+[1.043s] -- Detecting C compiler ABI info
+[1.261s] -- Detecting C compiler ABI info - done
+[1.288s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.289s] -- Detecting C compile features
+[1.291s] -- Detecting C compile features - done
+[1.334s] -- Detecting CXX compiler ABI info
+[1.528s] -- Detecting CXX compiler ABI info - done
+[1.556s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.557s] -- Detecting CXX compile features
+[1.558s] -- Detecting CXX compile features - done
+[1.683s] -- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)
+[2.526s] -- Found ament_lint_auto: 0.20.6 (/opt/ros/lyrical/share/ament_lint_auto/cmake)
+[2.775s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.776s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.780s] -- Added test 'lint_cmake' to check CMake code style
+[2.783s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.791s] -- Added test 'xmllint' to check XML markup files
+[2.797s] -- Configuring done (2.7s)
+[2.804s] -- Generating done (0.0s)
+[2.811s] -- Build files have been written to: /home/ya/robotics_projects/scara_project/build/scara_description
+[2.819s] Invoked command in '/home/ya/robotics_projects/scara_project/build/scara_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ya/robotics_projects/scara_project/ros2_ws/src/scara_description -DCMAKE_INSTALL_PREFIX=/home/ya/robotics_projects/scara_project/install/scara_description
+[2.820s] Invoking command in '/home/ya/robotics_projects/scara_project/build/scara_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ya/robotics_projects/scara_project/build/scara_description -- -j4 -l4
+[2.881s] Invoked command in '/home/ya/robotics_projects/scara_project/build/scara_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ya/robotics_projects/scara_project/build/scara_description -- -j4 -l4
+[2.897s] Invoking command in '/home/ya/robotics_projects/scara_project/build/scara_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ya/robotics_projects/scara_project/build/scara_description
+[2.910s] -- Install configuration: ""
+[2.911s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/launch
+[2.911s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/launch/view_robot.launch.py
+[2.911s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf
+[2.911s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/build
+[2.911s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/build/.built_by
+[2.913s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/build/COLCON_IGNORE
+[2.913s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/scara_exosceleton.urdf.xacro
+[2.914s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/log
+[2.914s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/log/build_2026-11-21_12-41-47
+[2.914s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/log/build_2026-11-21_12-41-47/logger_all.log
+[2.916s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/log/build_2026-11-21_12-41-47/events.log
+[2.918s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/log/build_2026-11-21_12-31-07
+[2.918s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/log/build_2026-11-21_12-31-07/logger_all.log
+[2.919s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/log/build_2026-11-21_12-31-07/events.log
+[2.920s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/log/COLCON_IGNORE
+[2.920s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/log/latest_build
+[2.921s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/log/latest
+[2.921s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/install
+[2.921s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/install/setup.zsh
+[2.921s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/install/.colcon_install_layout
+[2.922s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/install/_local_setup_util_ps1.py
+[2.923s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/install/local_setup.ps1
+[2.923s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/install/_local_setup_util_sh.py
+[2.923s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/install/local_setup.bash
+[2.924s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/install/local_setup.sh
+[2.924s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/install/setup.ps1
+[2.925s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/install/setup.sh
+[2.926s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/install/COLCON_IGNORE
+[2.926s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/install/setup.bash
+[2.927s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/install/local_setup.zsh
+[2.928s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/urdf/scara_exosceleton.urdf.bak
+[2.929s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/rviz
+[2.929s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/rviz/scara_mock.rviz
+[2.929s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/rviz/scara.rviz
+[2.930s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/meshes
+[2.930s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/meshes/Component7_1.stl
+[2.933s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/meshes/Component3_1.stl
+[2.935s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/meshes/Component5_1.stl
+[2.936s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/meshes/Component2_1.stl
+[2.938s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/ros2_control
+[2.938s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/ros2_control/scara.ros2_control.xacro
+[2.940s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/ament_index/resource_index/package_run_dependencies/scara_description
+[2.941s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/ament_index/resource_index/parent_prefix_path/scara_description
+[2.942s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/environment/ament_prefix_path.sh
+[2.942s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/environment/ament_prefix_path.dsv
+[2.942s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/environment/path.sh
+[2.943s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/environment/path.dsv
+[2.943s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/local_setup.bash
+[2.943s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/local_setup.fish
+[2.944s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/local_setup.sh
+[2.944s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/local_setup.zsh
+[2.944s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/local_setup.dsv
+[2.944s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/package.dsv
+[2.944s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/ament_index/resource_index/packages/scara_description
+[2.944s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/cmake/scara_descriptionConfig.cmake
+[2.945s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/cmake/scara_descriptionConfig-version.cmake
+[2.945s] -- Installing: /home/ya/robotics_projects/scara_project/install/scara_description/share/scara_description/package.xml
+[2.948s] Invoked command in '/home/ya/robotics_projects/scara_project/build/scara_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ya/robotics_projects/scara_project/build/scara_description
