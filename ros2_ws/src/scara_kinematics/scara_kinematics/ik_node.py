@@ -1,4 +1,12 @@
 import math
+import logging 
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+)
+
+logger = logging.getLogger(__name__)
 
 def fk(q1: float, q2: float, l1: float, l2: float) -> tuple[float, float]:
     """Углы суставов (рад) -> положение конца (x, y) в метрах."""
@@ -6,16 +14,17 @@ def fk(q1: float, q2: float, l1: float, l2: float) -> tuple[float, float]:
     y = l1 * math.sin(q1) + l2 * math.sin(q1 + q2)
     return x, y
 
-def ik(x: float, y: float, L1: float, L2:float, elbow: int = 1):
+def ik(x: float, y: float, L1: float, L2:float, elbow: int = -1) -> list[float]:
     c2 = (x ** 2 + y ** 2 - L1 ** 2 - L2 ** 2) / (2*L1*L2)
     if abs(c2) > 1.0 + 1e-9:
-        return None
+        logger.error("GOAL UNREACHABLE")
+        return [0, 0]
 
     c2 = max(-1.0, min(1.0, c2))
     q2 = elbow * math.acos(c2)
-    q1 = math.atan2(y, x) - math.atan2(L2 * math.sin(q2), L1 + L2 * math.cos(q2))
+    q1 = - (math.atan2(y, x) - math.atan2(L2 * math.sin(q2), L1 + L2 * math.cos(q2)))
 
-    return q1, q2
+    return [q1, q2]
 
 def main() -> None:
     print('Hi from scara_kinematics.')
