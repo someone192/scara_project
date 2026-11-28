@@ -39,7 +39,7 @@ namespace scara_hardware {
                 }
             }
 
-            RCLCPP_INFO(get_logger(), "on_init OK, joints: %zu", info_.joints_size())
+            RCLCPP_INFO(get_logger(), "on_init OK, joints: %zu", info_.joints_size());
             return hardware_interface::CallbackReturn::SUCCESS;
         }
 
