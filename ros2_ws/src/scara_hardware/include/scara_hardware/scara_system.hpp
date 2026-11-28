@@ -12,7 +12,11 @@
 
 namespace scara_hardware
 {
-    class ScaraSystem: public hardware_interface::SystemInterface{
+    class ScaraSystem: public hardware_interface::SystemInterface
+    {
+    public:
+
+        RCLCPP_SHARED_PTR_DEFINITNIONS(ScaraSystem)
 
         hardware_interface::CallbackReturn on_init( // hardware_interface::CallbackReturn is a type alias for rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn
             const hardware_interface::HardwareComponentsInterfaceParams & params) override;

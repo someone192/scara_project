@@ -45,27 +45,64 @@ namespace scara_hardware {
 
     hardware_interface::CallbackReturn ScaraSystem::on_configure(
         const rclcpp_lifecycle::State & /*previous_state*/){
-
+            for(const auto & [name, descr] : joint_state_interfaces_)
+            {
+                set_state(name, 0.0);
+            }
+            for(const auto & [name, descr]: joint_command_interfaces_)
+            {
+                set_command(name, 0.0);
+            }
+            RCLCPP_INFO(get_logger(), "on_configure OK");
+            return hardware_interface::CallbackReturn::SUCCESS;
         }
 
     hardware_interface::CallbackReturn ScaraSystem::on_activate(
         const rclcpp_lifecycle::State & /*previous_state*/){
-
+            for(const auto & [name, descr] : joint_state_interfaces_)
+            {
+                set_command(name, get_state(name));
+            }
+            RCLCPP_INFO(get_logger(), "on_activate OK");
+            return hardware_interface::CallbackReturn::SUCCESS;
         }
 
     hardware_interface::CallbackReturn on_deactivate(
         const rclcpp_lifecycle::State & /*previous_state*/){
-
+            
+            RCLCPP_INFO(get_logger(), "on_deactivate OK");
+            return hardware_interface::CallbackReturn::SUCCESS;
         }
     
     hardware_interface::return_type read(
         const rclcpp::Time & /*time*/, const rclcpp::Duration & /*period*/){
+            std::stringstream ss;
+            ss << "read():";
 
+            for(const auto & [name, descr] : joint_state_intefaces_)
+            {
+                set_state(name, get_command(name));
+                ss << "\n\t" << name << "=" << get_state(name);
+            }
+            RCLCPP_INFO_THROTTLE(get_logger(), *get_clock(), 1000, "%s", ss.str().c_str());
+            return hardware_interface::return_type::OK;
         }
 
     hardware_interface::return_type write(
         const rclcpp::Time & /*time*/, const rclcpp::Duration & /*period*/){
-            
+            std::stringstream ss;
+            ss << "write():";
+
+            for(const auto & [name, descr] : joint_state_interfaces_)
+            {
+                ss << "\n\t" << name << "<-" << get_command(name);
+            }
+            RCLCPP_INFO_THROTTLE(get_logger(), *get_clock(), 1000, "%s", ss.str().c_str());
+            return hardware_interface::return_type::OK;
         }
 
 }
+
+#include "pluginlib/class_list_macros.hpp"
+
+PLUGINLIB_EXPORT_CLASS(scara_hardware::ScaraSystem, hardware_interface::SystemInterface)
